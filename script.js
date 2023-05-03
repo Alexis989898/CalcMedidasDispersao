@@ -23,7 +23,7 @@ function StoreElements() {
   var temp = document.getElementById('divelementos');
   var elementos = document.getElementById("divelementos").innerHTML;
   elementos = elementos.replaceAll(" ", ''); // :-D
-  elementos = elementos.replaceAll(/[^0-9,]+/g, '');
+  elementos = elementos.replaceAll(/[^0-9,.]+/g, '');
   console.log(elementos);
   elementos = elementos.split(","); // Vira um array aqui
   elementos = elementos.filter(e => String(e).trim());
