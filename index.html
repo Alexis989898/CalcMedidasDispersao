@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div id="content">
+        <div class="wrapper-main borda1">
+            <div id="wrapper-title">FATEC AMERICANA CALCULADORA DE MEDIDAS DE DISPERSÃO</div>
+
+            <div id="wrapper-calculadora">
+                <div class="wrapper-dois">
+                    <div data-text="Digite os elementos aqui (1,2,3...)" contenteditable="true" id="divelementos"></div>
+                    <button class="submit borda1" onclick="StoreElements()">CALCULAR</button>
+                </div>
+
+                <div class="wrapper-dois">
+                    <div id="wrapper-resultados" class="borda1">
+                        <div class="wrapper-result">
+                            <span class="resultname" >AMPLITUDE: </span>
+                            <span class="numresult" id="ramplitude"></span>
+                        </div>
+
+                        <hr width="100%" color="black" size="1px" />
+
+                        <div class="wrapper-result">
+                            <span class="resultname" >MÉDIA: </span>
+                            <span class="numresult" id="rmedia"></span>
+                        </div>
+
+                        <hr width="100%" color="black" size="1px" />
+
+                        <div class="wrapper-result">
+                            <span class="resultname" >VARIÂNCIA: </span>
+                            <span class="numresult" id="rvariancia"></span>
+                        </div>
+
+                        <hr width="100%" color="black" size="1px" />
+
+                        <div class="wrapper-result">
+                            <span class="resultname" >DESVIO PADRÃO: </span>
+                            <span class="numresult" id="rdesvio"></span>
+                        </div>
+
+                        <hr width="100%" color="black" size="1px" />
+
+                        <div class="wrapper-result">
+                            <span class="resultname" >COEFICIENTE DE DISPERSÃO:
+                            </span>
+                            <span class="numresult" id="rcoeficiente"></span>
+                        </div>
+                    </div>
+
+                    <div class="calcdesc borda1 hidden" id="descamplitude">
+                        <button onclick="HideDesc('descamplitude')" class="btndescback">
+                            <img class="btndescbackimg" src="imagens/back-arrow-svgrepo-com.svg" alt="">
+                        </button> 
+                        <span class="desctitle">Cálculo de Amplitude</span>
+                    </div>
+                    <div class="calcdesc borda1 hidden" id="descmedia">
+                        <button onclick="HideDesc('descmedia')" class="btndescback">
+                            <img class="btndescbackimg" src="imagens/back-arrow-svgrepo-com.svg" alt="">
+                        </button>
+                        <span class="desctitle">Cálculo de Média</span>
+                    </div>
+                    <div class="calcdesc borda1 hidden" id="descvariancia">
+                        <button onclick="HideDesc('descvariancia')" class="btndescback">
+                            <img class="btndescbackimg" src="imagens/back-arrow-svgrepo-com.svg" alt="">
+                        </button>
+                        <span class="desctitle">Cálculo de Variância</span>
+                    </div>
+                    <div class="calcdesc borda1 hidden" id="descdesvio">
+                        <button onclick="HideDesc('descdesvio')" class="btndescback">
+                            <img class="btndescbackimg" src="imagens/back-arrow-svgrepo-com.svg" alt="">
+                        </button>
+                        <span class="desctitle">Cálculo de Desvio Padrão</span>
+                    </div>
+                    <div class="calcdesc borda1 hidden" id="desccoeficiente">
+                        <button onclick="HideDesc('desccoeficiente')" class="btndescback">
+                            <img class="btndescbackimg" src="imagens/back-arrow-svgrepo-com.svg" alt="">
+                        </button>
+                        <span class="desctitle">Cálculo de Coeficiente De Dispersão</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="meettheteam">
+        <div id="mttheader">MEET THE TEAM</div>
+        <div id="mttcontent">
+            <div id="wrapper-team">
+                <div class="wrapper-teammate">
+                    <img class="imgteam" src="imagens/Alexis.jpeg" alt="">
+                    <span class="nometeam borda1">Alexis <br> Gomes</span>
+                </div>
+                <div class="wrapper-teammate">
+                    <img class="imgteam" src="imagens/Abdala.jpeg" alt="">
+                    <span class="nometeam borda1">Bruno <br> Abdala</span>
+                </div>
+                <div class="wrapper-teammate">
+                    <img class="imgteam" src="imagens/Caio.jpeg" alt="">
+                    <span class="nometeam borda1">Caio <br> César</span>
+                </div>
+                <div class="wrapper-teammate">
+                    <img class="imgteam" src="imagens/Willian.jpeg" alt="">
+                    <span class="nometeam borda1">Willian <br> Ladeia</span>
+                </div>
+                <div class="wrapper-teammate">
+                    <img class="imgteam" src="imagens/Ian.jpeg" alt="">
+                    <span class="nometeam borda1">Ian <br> Roland</span>
+                </div>
+                <div class="wrapper-teammate">
+                    <img class="imgteam" src="imagens/Pedro.jpeg" alt="">
+                    <span class="nometeam borda1">Pedro <br> Giorgetti</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="jquery-3.1.1.js"></script>
+<script src="script.js"></script>
+
+</html>
